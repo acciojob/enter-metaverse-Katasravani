@@ -12,25 +12,14 @@
 <p id="status">Enter the Metaverse</p>
 
 <!-- The button with id "enterBtn" -->
-<button id="enterBtn">Enter</button>
+<button id="enterBtn" onclick=click()>Enter</button>
 
 <!-- JavaScript code to update the tag on button click -->
 <script>
     // Get the elements by their IDs
-    const statusElement = document.getElementById('status');
-    const enterBtn = document.getElementById('enterBtn');
+    
 
     // Add an event listener to the button
-    enterBtn.addEventListener('click', function () {
-        // Create a new h1 element
-        const h1Element = document.createElement('h1');
-        
-        // Set its content
-        h1Element.textContent = 'Entered Metaverse';
-        
-        // Replace the p tag with the new h1 element
-        statusElement.parentNode.replaceChild(h1Element, statusElement);
-    });
 </script>
 
 </body>
