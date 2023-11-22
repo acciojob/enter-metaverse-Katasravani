@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaverse Example</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<p id="status">Enter the Metaverse</p>
-	<button id="enterBtn" onclick=clickme()>Enter</button>
-    <script type="text/javascript" src="./script.js">
+
+<!-- The initial p tag with id "status" and text "Enter the Metaverse" -->
+<p id="status">Enter the Metaverse</p>
+
+<!-- The button with id "enterBtn" -->
+<button id="enterBtn">Enter</button>
+
+<!-- JavaScript code to update the tag on button click -->
+<script>
+    // Get the elements by their IDs
+    const statusElement = document.getElementById('status');
+    const enterBtn = document.getElementById('enterBtn');
+
+    // Add an event listener to the button
+    enterBtn.addEventListener('click', function () {
+        // Create a new h1 element
+        const h1Element = document.createElement('h1');
+        
+        // Set its content
+        h1Element.textContent = 'Entered Metaverse';
+        
+        // Replace the p tag with the new h1 element
+        statusElement.parentNode.replaceChild(h1Element, statusElement);
+    });
 </script>
 
 </body>
-
 </html>
